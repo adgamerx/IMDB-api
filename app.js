@@ -21,8 +21,8 @@ app.use('/api/:term', (req, res) => {
 })
 
 app.use('/', (req, res) => {
-    res.send('Currently running on localhost');
+    res.send('<b>Api working fine...<b>');
 });
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 console.log('Listening on PORT : ', PORT);
 app.listen(PORT);
