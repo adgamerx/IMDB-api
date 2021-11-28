@@ -31,8 +31,6 @@ async function search(term) {
 
   searchById.searchById(info.id);
 
-  return data;
-
 }
 
 // search("avengers");
