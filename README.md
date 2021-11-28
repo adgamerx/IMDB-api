@@ -1,6 +1,6 @@
 # IMDB-api
 
-This is an unoffocial API to scrape data from IMDB site...
+This is an unofficial API to scrape data from IMDB site...
 
 # How to get data
 
