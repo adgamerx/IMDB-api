@@ -3,6 +3,8 @@ const cheerio = require("cheerio");
 
 async function search(term) {
 
+  var data = [];
+
   try {
     var web = await axios.get(`https://www.imdb.com/find?q=${term}&s=tt&exact=true&ref_=fn_al_tt_ex`);
   } catch {
@@ -10,7 +12,7 @@ async function search(term) {
   }
 
   const $ = cheerio.load(web.data);
-  var info = [];
+  var info = {};
   info.title = $(
     `#main > div > div.findSection > table > tbody > tr:nth-child(1) > td.result_text > a`
   ).text();
@@ -18,7 +20,13 @@ async function search(term) {
   info.url = 'https://www.imdb.com/' + $(
     "#main > div > div.findSection > table > tbody > tr:nth-child(1) > td.result_text > a"
   ).attr("href");
-  console.log(info);
+  // console.log(info);
+  data.push(info)
+  return data;
 }
 
-search('Satyameva Jayate');
+// search("avengers")
+
+module.exports = {
+  serach: search
+}
