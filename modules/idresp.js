@@ -44,7 +44,7 @@ async function searchById(id) {
 //   console.log(finalinfo);
 
   data.push(finalinfo);
-  console.log(data);
+//   console.log(data);
   return data;
 }
 
