@@ -29,8 +29,9 @@ async function search(term) {
     `tr.findResult:nth-child(1) > td:nth-child(2) > a:nth-child(1)`
   )[0].attribs.href.split("/")[2];
 
-  searchById.searchById(info.id);
+  var fdata = searchById.searchById(info.id);
 
+  return fdata;
 }
 
 // search("avengers");
