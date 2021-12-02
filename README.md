@@ -1,6 +1,6 @@
-# IMDB-api
+# IMDB-API
 
-This is an unofficial API to scrape data from IMDB site...
+IMDB-API is an unofficial API to scrape data from IMDB site...
 
 # How to get data
 
@@ -41,7 +41,7 @@ Response
 Go to `https://imdb-api.fixalis706.repl.co/api/id/${IMDB_ID}` to search by IMDB ID 
 
 or 
-`https://imdb-api.fixalis706.repl.co/api/id/${IMDB_ID}` to search by movie title
+`https://imdb-api.fixalis706.repl.co/api/title/${Movie_Name}` to search by movie title
 
 ### You can fork this repo and deploy it to your server or you can deploy it on Heroku easily by clicking the below button  
 
