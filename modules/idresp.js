@@ -40,7 +40,7 @@ async function searchById(id) {
     "div.PrincipalCredits__PrincipalCreditsPanelWideScreen-sc-hdn81t-0.hzbDAm > ul > li:nth-child(1) > div"
   ).text();
 
-  console.log(finalinfo);
+  // console.log(finalinfo);
 
   data.push(finalinfo);
 //   console.log(data);
