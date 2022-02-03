@@ -39,7 +39,9 @@ app.use('/api/id/:id', (req, res) => {
 })
 
 app.use('/', (req, res) => {
-    res.send('<b>Api working fine...<b>');
+    res.write('<b>Api working fine...<b>');
+    res.write("<p>Please use endpoints stated in the docs <a href='https://github.com/adgamerx/IMDB-api' target='_blank'>Here</a></p>");
+    res.send()
 });
 const PORT = process.env.PORT || 3000;
 console.log('Listening on PORT : ', PORT);
